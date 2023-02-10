@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/2acf7dd2f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Portfolio..</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="offmenu()">Home</a></li>
+                    <li><a href="#about" onclick="offmenu()">About</a></li>
+                    <li><a href="#education" onclick="offmenu()">Education</a></li>
+                    <li><a href="#hobbies" onclick="offmenu()">Hobbies</a></li>
+                    <li><a href="#contact" onclick="offmenu()">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Personal Website !!! </p>
+                <h1>Hi, I'm <span> Janak Gharti</span> and welcome! to <br>my personal Website.</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/gurung.JPG" alt="gurung">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is <span>Janak Gharti</span> . Basically, I am from Tulsipur -7 Dang. Currently I am living in Dillibazar Kathmandu
+                        for my further study. I am the student of BSc(Hons) Computer Science in  Helrald College Kathmandu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="education">
+        <div class="container">
+            <h1 class="sub-title">My Education</h1>
+            <div class="school-list">
+                <div class="school">
+                    <img src="./images/Gurujajur.jpg" alt="guru">
+                    <div class="layer">
+                        <h3>Guru Jajur S. School</h3>
+                        <p>I passed my SEE examination from this school by scoring 3.85 gpa.</p>
+                    </div>
+                </div>
+                <div class="school">
+                    <img src="./images/Gyanjyoti.JPG" alt="gyan">
+                    <div class="layer">
+                    <h3>Gyan Jyoti S. School</h3>
+                    <p>I passed my SLC examination from this college by scoring 3.70 gpa.</p>
+                    </div>
+                </div>
+                <div class="school">
+                    <img src="./images/HeraldCollege.jpg" alt="HeraldCollege">
+                    <div class="layer">
+                    <h3>Herald College Kathmandu</h3>
+                    <p>Currently, studing BSc (hons) Computer Science in Herald College. And, this is my 1st Semester.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="hobbies">
+        <div class="container">
+            <h1 class="sub-title"> My Hobbies</h1>
+            <div class="hobbies-list">
+                <div>
+                    <h2>Playing</h2>
+                    <p>Playing football is my hobby since my childhood. When I have spare time, I usually play football with my friends.</p>
+                </div>
+                <div>
+                    <h2>Reading</h2>
+                    <p>I am a good reader. I love to read the books specially historical, scientific and literature.</p>
+                </div>
+                <div>
+                    <h2>Singing</h2>
+                    <p>Well! I have interest in singing too. I am not a good singer but I like to sing a song and playing guiter.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sushantmagar162@gamil.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>+977-9822944548</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100051628988426" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/janakgharti" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wordpress.com/view/jan494.wordpress.com" target="_blank"><i class="fa-brands fa-wordpress"></i></a>
+                        <a href="https://www.instagram.com/iam.susaan_/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="cvjanak.pdf" target="_blank" class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Janak Gharti - 2023.</p>
+        </div>
+    </div>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+        function offmenu(){
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+</body>
+</html>
